@@ -399,12 +399,12 @@ body {
 /* Contact Section */
 .contact-section {
 	background-color: var(--clr-white);
-	position: relative;
-	overflow: hidden;
 }
 
 .contact-container {
 	padding: 36px 0;
+	position: relative;
+	/* overflow: hidden; */
 }
 
 .contact-left {
@@ -449,7 +449,7 @@ body {
 .contact-bg {
 	height: 100%;
 	position: absolute;
-	right: 0;
+	right: -201px;
 	bottom: 0;
 }
 
