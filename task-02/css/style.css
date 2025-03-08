@@ -149,6 +149,7 @@ body {
 	margin: 0 auto;
 	padding: 0 60px;
 	background: url('../img/hero-image.png') no-repeat 80% center/contain;
+	padding-bottom: 46px;
 }
 
 .hero-content {
