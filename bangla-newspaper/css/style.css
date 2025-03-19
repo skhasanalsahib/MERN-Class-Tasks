@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Li Sohid Shafkat Samir";
+    src: url(../fonts/LiShohidShafkatSamir.woff) format("woff"),
+    url(../fonts/LiShohidShafkatSamir.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Akaash";
+    src: url(../fonts/akaashnormal.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Akaash", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Li Sohid Shafkat Samir", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header > .container .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+header > .container .header-left,
+header > .container .logo,
+header > .container .header-right {
+    flex: 1;
+    justify-content: center;
+}
+
+header > .container .header-left i {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header > .container .header-left p {
+    font-size: 14px;
+    color: #333;
+    /* margin-bottom: 10px; */
+}
+
+header > .container .header-top .logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header > .container .header-top .header-right {
+    text-align: right;
+}
+
+header > .container .header-top .header-right .socials {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header > .container .header-right .socials i {
+    margin: 0 10px;
+    color: #333;
+}
+
+header > .container .header-right .search input {
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+header > .container .header-right .search button {
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Navigation */
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+}
+
+.nav-menu li {
+
+}
+
+/* News Section */
+
+.news-section {
+    padding: 40px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-grid .grid-left {
+    grid-column: 1 / 2;
+    border-right: 1px solid #33333320;
+    padding: 0 10px 0 0;
+}
+
+.news-grid .grid-center {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.big-news {
+    grid-column: 1 / 3;
+    border-bottom: 1px solid #33333320;
+    padding: 0 10px 0 0;
+}
+
+.news-grid .grid-right {
+    grid-column: 4 / 5;
+    border-left: 1px solid #33333320;
+    padding: 0 0 0 10px;
+}
+
+.news {
+    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #33333320;
+}
+
+.news h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 14px;
+    color: #333333e8;
+    margin-bottom: 10px;
+}
