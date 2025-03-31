@@ -1,0 +1,194 @@
+.billing-section {
+  padding: 60px 0;
+}
+
+.billing-section .container {
+  max-width: 1240px;
+}
+
+.billing-section .container .billing-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+/* Billing details fields */
+.billing-form .billing-details-fields {
+  flex: 1;
+  width: 60%;
+  padding: 35px 65px;
+}
+
+.billing-details-fields h3 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.billing-details-fields label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: balck;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 36px;
+}
+
+.billing-details-fields label input,
+.billing-details-fields label select,
+.additional-info {
+  height: 75px;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  padding: 0 30px;
+  font-size: 1.6rem;
+  color: #9f9f9f;
+}
+
+.additional-info {
+  width: 100%;
+}
+
+.name-field {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.name-field label {
+  flex: 1;
+  width: 45%;
+}
+
+/* Place order fields */
+.billing-form .place-order-fields {
+  flex: 1;
+  padding: 85px 26px;
+  min-width: 340px;
+  text-align: center;
+  /* width: 100%; */
+}
+
+.place-order-fields .amount-summary article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.amount-summary article h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.amount-summary .product-name-quantity p {
+  font-size: 1.6;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.product-name-quantity .quantity {
+  color: black;
+}
+
+.amount-summary .product-name-quantity .price {
+  color: black;
+}
+
+.amount-summary .subtotal p {
+  color: black;
+}
+.amount-summary .subtotal p:last-child {
+  font-weight: 300;
+}
+
+.amount-summary .total h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Divider */
+.place-order-fields .divider {
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+  margin: 25px auto;
+}
+
+/* Payment Method */
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.payment-method label {
+  color: black;
+}
+
+.payment-method label p {
+  color: #9f9f9f;
+  font-weight: 300;
+  margin-top: 2px;
+}
+
+/* Payment method custom input button and accordion like system */
+.payment-method label input {
+  display: none;
+}
+
+.payment-method label .custom-radio {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #9f9f9f;
+  background-color: transparent;
+  border-radius: 50%;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.payment-method label input[type="radio"]:checked + .custom-radio {
+  background-color: black;
+  border-color: black;
+}
+
+.payment-method label p {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+.payment-method label input[type="radio"]:checked ~ p {
+  max-height: fit-content;
+}
+
+.place-order-fields .privacy-policy-aggrement {
+  color: black;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: justify;
+  margin: 24px 0 40px 0;
+}
+
+.place-order-btn {
+  border: 1px solid #000000;
+  padding: 15px 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.place-order-btn:hover {
+  background-color: #000000;
+  color: white;
+}

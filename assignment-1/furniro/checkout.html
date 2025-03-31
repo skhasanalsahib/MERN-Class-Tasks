@@ -92,7 +92,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./cart.html">
                   <iconify-icon
                     icon="ant-design:shopping-cart-outlined"
                     width="28"
@@ -121,6 +121,156 @@
             ></iconify-icon>
             <span class="light-font">Checkout</span>
           </p>
+        </div>
+      </section>
+
+      <section class="billing-section">
+        <div class="container">
+          <form class="billing-form" action="#">
+            <div class="billing-details-fields">
+              <h3>Billing details</h3>
+              <!-- First and Last name -->
+              <div class="name-field">
+                <label>
+                  First Name
+                  <input type="text" required />
+                </label>
+                <label>
+                  Last Name
+                  <input type="text" required />
+                </label>
+              </div>
+
+              <!-- Company Name Field -->
+              <label>
+                Company Name (Optional)
+                <input type="text" />
+              </label>
+
+              <!-- Country / Region Select field -->
+              <label>
+                Country / Region
+                <select name="Country" required>
+                  <option value="bangladesh" selected>Bangladesh</option>
+                  <option value="srilanka">Sri Lanka</option>
+                  <option value="india">India</option>
+                  <option value="pakistan">Pakistan</option>
+                </select>
+              </label>
+
+              <!-- Street Address -->
+              <label>
+                Street Address
+                <input type="text" required />
+              </label>
+
+              <!-- Province -->
+              <label>
+                Province
+                <select name="Province" required>
+                  <option value="sundarbans-region">
+                    Greater Sundarbans Region
+                  </option>
+                  <option value="hill-tracts-region">Hill Tracts Region</option>
+                  <option value="northern-region">Northern Region</option>
+                  <option value="central-bangladesh">Central Bangladesh</option>
+                </select>
+              </label>
+
+              <!-- ZIP code -->
+              <label>
+                ZIP Code
+                <input type="text" required />
+              </label>
+
+              <!-- Phone No -->
+              <label>
+                Phone
+                <input type="text" required />
+              </label>
+
+              <!-- Email -->
+              <label>
+                Email Address
+                <input type="email" required />
+              </label>
+
+              <!-- Additional Info -->
+              <input
+                type="text"
+                class="additional-info"
+                placeholder="Additional Information"
+              />
+            </div>
+
+            <div class="place-order-fields">
+              <div class="amount-summary">
+                <article>
+                  <h4 class="summary-heading">Product</h4>
+                  <h4 class="summary-heading">Subtotal</h4>
+                </article>
+                <article class="product-name-quantity">
+                  <p>Asgaard Sofa <span class="quantity"> X 1</span></p>
+                  <p class="price">Rs. 250,000.00</p>
+                </article>
+                <article class="subtotal">
+                  <p>Subtotal</p>
+                  <p>Rs. 250,000.00</p>
+                </article>
+                <article class="total">
+                  <p>Total</p>
+                  <h4>Rs. 250,000.00</h4>
+                </article>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="payment-method">
+                <label>
+                  <input type="radio" name="payment" checked required />
+                  <span class="custom-radio"></span>
+                  Direct Bank Transfer
+                  <p>
+                    Make your payment directly into our bank account. Please use
+                    your Order ID as the payment reference. Your order will not
+                    be shipped until the funds have cleared in our account.
+                  </p>
+                </label>
+
+                <label>
+                  <input type="radio" name="payment" required />
+                  <span class="custom-radio"></span>
+                  Credit Card
+                  <p>
+                    Make your payment using your credit card. Please enter your
+                    card details at checkout. Your order will be processed
+                    immediately upon successful payment.
+                  </p>
+                </label>
+
+                <label>
+                  <input type="radio" name="payment" required />
+                  <span class="custom-radio"></span>
+                  Cash On Delivery
+                  <p>
+                    Pay for your order in cash when it is delivered to your
+                    doorstep. Please ensure you have the exact amount ready as
+                    the delivery personnel may not have change. Your order will
+                    be shipped immediately.
+                  </p>
+                </label>
+              </div>
+
+              <p class="privacy-policy-aggrement">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our
+                <strong>privacy policy.</strong>
+              </p>
+
+              <button class="place-order-btn" type="submit">Place Order</button>
+            </div>
+          </form>
         </div>
       </section>
 

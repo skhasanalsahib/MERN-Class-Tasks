@@ -682,9 +682,15 @@ footer .copyright {
 }
 
 .key-benifits-section .container {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; */
+  gap: 30px;
+  row-gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* justify-items: stretch; */
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -716,5 +722,18 @@ footer .copyright {
   font-weight: 500;
   line-height: 1.5em;
   color: #898989;
+}
+
+@media screen and (min-width: 590px) {
+  .key-benifits-section .container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .key-benifits-section .container {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+  }
 }
 /* Key Benifits Section End */
