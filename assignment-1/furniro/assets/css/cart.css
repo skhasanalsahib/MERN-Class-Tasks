@@ -1,0 +1,132 @@
+.cart-section .container {
+  max-width: 1240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 72px 20px;
+}
+
+table,
+thead,
+tbody,
+tr,
+td {
+  border-collapse: collapse;
+  text-align: center;
+}
+.cart-section .container table {
+  flex: 3;
+}
+
+.cart-section .container .cart-summary {
+  flex: 1;
+}
+
+.cart-items-list .table-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+  height: 55px;
+  background-color: #f9f1e7;
+}
+
+.white-space {
+  display: block;
+  height: 55px;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+}
+
+.product-details .product-image {
+  height: 105px;
+  width: 105px;
+  background-color: #f9f1e7;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-right: 34px;
+}
+
+.product-details .product-name,
+.product-price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.product-quantity input {
+  height: 32px;
+  width: 32px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: black;
+  border: 1px solid #9f9f9f;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cart-summary {
+  padding: 25px 75px 75px 75px;
+  background-color: #f9f1e7;
+  max-width: 390px;
+}
+
+.cart-summary h3 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 62px;
+}
+
+.total-amounts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.total-amounts article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-amounts article h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+
+.total-amounts article p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.total-amounts .total p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #b88e2f;
+}
+
+.checkout-btn {
+  border: 1px solid #000000;
+  padding: 15px 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: 42px;
+}
+
+.checkout-btn:hover {
+  background-color: black;
+  color: var(--white-color);
+}
+
+.item-remove-btn {
+  margin-left: 30px;
+}

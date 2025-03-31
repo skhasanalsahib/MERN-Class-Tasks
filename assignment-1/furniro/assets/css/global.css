@@ -139,12 +139,63 @@ a:hover {
   margin-bottom: 0.8rem;
 }
 
+/* Hero For most page start */
+
 .hero {
+  height: 316px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  /* background-color: rgba(0, 0, 0, 0.17); */
   background-image: url("https://images.unsplash.com/photo-1625494025723-5a401deae8c8?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
+
+.hero::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .hero-content img {
+  width: 60px;
+  aspect-ratio: 25/16;
+  margin-bottom: 20px;
+}
+
+.hero .hero-content h1 {
+  font-size: 4.8rem;
+  color: black;
+  font-weight: 500;
+}
+
+.hero .hero-content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+
+.hero .hero-content p .light-font {
+  font-weight: 300;
+}
+
+/* Hero For almost all page End */
 
 .btn-l {
   display: inline-block;
@@ -485,6 +536,55 @@ footer .copyright {
 .product-card {
   width: 285px;
   text-align: left;
+  position: relative;
+}
+
+.discount30::before {
+  content: "30%";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  z-index: 1;
+  background-color: #9f9f9f;
+  border-radius: 50%;
+  color: var(--white-color);
+}
+
+.discount50::before {
+  content: "50%";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  z-index: 1;
+  background-color: var(--light-red-color);
+  border-radius: 50%;
+  color: var(--white-color);
+}
+
+.new-tag::before {
+  content: "New";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  z-index: 1;
+  background-color: var(--light-green-color);
+  border-radius: 50%;
+  color: var(--white-color);
 }
 
 .product-card .product-img {
@@ -575,3 +675,46 @@ footer .copyright {
 }
 
 /* Product Card Component End */
+
+/* Key benifits Section */
+.key-benifits-section {
+  background-color: #faf3ea;
+}
+
+.key-benifits-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.benifit-card {
+  /* flex: 1; */
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  height: 60px;
+}
+
+.benifit-card .benifit-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benifit-content h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #242424;
+}
+
+.benifit-content p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #898989;
+}
+/* Key Benifits Section End */
