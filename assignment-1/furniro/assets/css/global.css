@@ -587,6 +587,10 @@ footer .copyright {
   color: var(--white-color);
 }
 
+.product-card .product-info {
+  display: block;
+}
+
 .product-card .product-img {
   width: 100%;
   height: 300px;

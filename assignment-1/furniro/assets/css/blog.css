@@ -1,0 +1,245 @@
+.blog-section .container {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+.blog-section .container .blog-contents {
+  flex: 1;
+  padding: 50px 0;
+  /* min-width: 825px; */
+}
+
+.blog-contents .blog {
+  margin-bottom: 50px;
+}
+
+.blog-contents .blog .blog-img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog .post-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.blog .post-meta span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.blog p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #9f9f9f;
+  margin-bottom: 30px;
+}
+
+.blog .read-more-btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 12px;
+  border-bottom: 2px solid black;
+}
+
+.blog-section .container .sidebar {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0;
+  /* background-color: red; */
+}
+
+.sidebar .search-bar {
+  display: flex;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+}
+
+.sidebar .search-bar input {
+  width: 100%;
+  height: 58px;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  padding: 0 30px;
+  font-size: 1.6rem;
+  color: #9f9f9f;
+  border: none;
+  border-radius: 10px;
+}
+
+.sidebar .search-bar button {
+  height: 58px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: black;
+  padding: 0 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.categories {
+  padding: 0 70px;
+}
+
+.categories h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 42px;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.categories-list .category-item {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-item a,
+.category-item .category-count {
+  color: #9f9f9f;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.category-item a:hover {
+  /* color: black; */
+  text-decoration: underline;
+}
+
+.recent-posts {
+  padding: 0 65px;
+  margin-top: 50px;
+}
+
+.recent-posts h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 42px;
+}
+
+.recent-posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  list-style: none;
+}
+
+.recent-post-item {
+  cursor: pointer;
+}
+
+.recent-post-item img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recent-posts-list .recent-post-item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-posts-list .recent-post-item .recent-post-content h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+.recent-posts-list .recent-post-item .recent-post-content p {
+  font-size: 1.2rem;
+  color: #9f9f9f;
+}
+
+.pagination {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-btn {
+  height: 50px;
+  min-width: 50px;
+  background-color: #f9f1e7;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-btn:hover,
+.pagination .active {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 425px) {
+  .pagination {
+    gap: 38px;
+    justify-content: center;
+  }
+
+  .pagination-btn {
+    height: 60px;
+    min-width: 60px;
+    padding: 15px 28px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .blog-section .container {
+    flex-direction: row;
+  }
+
+  .blog-section .container .blog-contents {
+    flex: 1;
+    padding: 100px 40px 65px 40px;
+    width: 800px;
+  }
+
+  .blog-section .container .sidebar {
+    flex: 0.5;
+    padding: 100px 40px 65px 40px;
+    width: 400px;
+  }
+}
